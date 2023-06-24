@@ -1,6 +1,5 @@
 package Member.entity
 
-import study.GroupMember
 import javax.persistence.*
 
 @Entity
@@ -9,7 +8,6 @@ class Member(
     password:String,
     nickname:String,
     role:MemberRole,
-    groupMembers: MutableList<GroupMember>
     ) {
 
     @Id
@@ -28,9 +26,5 @@ class Member(
 
     @Enumerated(EnumType.STRING)
     var role: MemberRole =role
-        protected set
-
-    @OneToMany(fetch = FetchType.LAZY)
-    var groupMembers : MutableList<GroupMember> ?=groupMembers
         protected set
 }
