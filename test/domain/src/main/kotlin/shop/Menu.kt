@@ -8,7 +8,8 @@ import javax.persistence.Id
 @Entity
 class Menu (
     menuName:String,
-    menuPrice:Int
+    menuPrice:Int,
+    description:String
         ){
 
     @Id
@@ -20,4 +21,8 @@ class Menu (
         protected set
 
     var menuPrice:Int=menuPrice
+        protected set
+
+    var description:String=description
+        protected set
 }
