@@ -1,4 +1,4 @@
-package order
+package shop
 
 import lombok.Builder
 import javax.persistence.*
@@ -13,7 +13,7 @@ class ShopInfo(
     var shopInfoSeq:Long?=null
 
     @OneToOne
-    var shop:Shop=shop
+    var shop: Shop =shop
 
     class DeliveryInfo(
         var minAmount: Int,

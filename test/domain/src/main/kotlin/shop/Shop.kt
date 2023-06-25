@@ -1,4 +1,4 @@
-package order
+package shop
 
 import javax.persistence.*
 
@@ -28,6 +28,6 @@ class Shop(
         protected set
 
     @OneToOne
-    var shopInfo:ShopInfo=shopInfo
+    var shopInfo: ShopInfo =shopInfo
         protected set
 }
